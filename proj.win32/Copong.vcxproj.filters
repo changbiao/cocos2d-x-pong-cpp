@@ -39,6 +39,12 @@
     <ClCompile Include="..\Classes\Score.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\ParticleSystemCustom.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ParticleManager.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
     <ClCompile Include="..\Classes\CollisionManager.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
@@ -78,6 +84,12 @@
       <Filter>Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Score.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParticleSystemCustom.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ParticleManager.h">
       <Filter>Classes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\CollisionManager.h">

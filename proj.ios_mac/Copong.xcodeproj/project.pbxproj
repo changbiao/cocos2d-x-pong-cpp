@@ -48,6 +48,8 @@
 		4E78158B18D78B800082513D /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 4E78158318D78B800082513D /* Fonts */; };
 		4E78159418D78B800082513D /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 4E78158818D78B800082513D /* Sounds */; };
 		4E78159518D78B800082513D /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 4E78158818D78B800082513D /* Sounds */; };
+		4EAD1A5E18D8C5CD00D1EE29 /* Particles in Resources */ = {isa = PBXBuildFile; fileRef = 4EAD1A5D18D8C5CD00D1EE29 /* Particles */; };
+		4EAD1A5F18D8C5CD00D1EE29 /* Particles in Resources */ = {isa = PBXBuildFile; fileRef = 4EAD1A5D18D8C5CD00D1EE29 /* Particles */; };
 		4E78159618D78B800082513D /* Support in Resources */ = {isa = PBXBuildFile; fileRef = 4E78158918D78B800082513D /* Support */; };
 		4E78159718D78B800082513D /* Support in Resources */ = {isa = PBXBuildFile; fileRef = 4E78158918D78B800082513D /* Support */; };
 		4E477E0D18D78DDF0079A6F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E78159818D78B930082513D /* Images.xcassets */; };
@@ -74,6 +76,10 @@
 		4E78157818D78B6B0082513D /* MenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E78155E18D78B6B0082513D /* MenuScene.cpp */; };
 		4E78157318D78B6B0082513D /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E78155A18D78B6B0082513D /* GameScene.cpp */; };
 		4E78157418D78B6B0082513D /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E78155A18D78B6B0082513D /* GameScene.cpp */; };
+		4EB0CF6718E795FA00C9E1F4 /* ParticleSystemCustom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0CF6318E795FA00C9E1F4 /* ParticleSystemCustom.cpp */; };
+		4EB0CF6818E795FA00C9E1F4 /* ParticleSystemCustom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0CF6318E795FA00C9E1F4 /* ParticleSystemCustom.cpp */; };
+		4EB0CF6518E795FA00C9E1F4 /* ParticleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0CF6118E795FA00C9E1F4 /* ParticleManager.cpp */; };
+		4EB0CF6618E795FA00C9E1F4 /* ParticleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0CF6118E795FA00C9E1F4 /* ParticleManager.cpp */; };
 		4E78157118D78B6B0082513D /* CollisionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E78155818D78B6B0082513D /* CollisionManager.cpp */; };
 		4E78157218D78B6B0082513D /* CollisionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E78155818D78B6B0082513D /* CollisionManager.cpp */; };
 		4E78157518D78B6B0082513D /* KeyboardManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E78155C18D78B6B0082513D /* KeyboardManager.cpp */; };
@@ -272,6 +278,10 @@
 		4E78155B18D78B6B0082513D /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = ../Classes/GameScene.h; sourceTree = "<group>"; };
 		4E78155E18D78B6B0082513D /* MenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MenuScene.cpp; path = ../Classes/MenuScene.cpp; sourceTree = "<group>"; };
 		4E78155F18D78B6B0082513D /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuScene.h; path = ../Classes/MenuScene.h; sourceTree = "<group>"; };
+		4EB0CF6318E795FA00C9E1F4 /* ParticleSystemCustom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParticleSystemCustom.cpp; path = ../Classes/ParticleSystemCustom.cpp; sourceTree = "<group>"; };
+		4EB0CF6418E795FA00C9E1F4 /* ParticleSystemCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParticleSystemCustom.h; path = ../Classes/ParticleSystemCustom.h; sourceTree = "<group>"; };
+		4EB0CF6118E795FA00C9E1F4 /* ParticleManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParticleManager.cpp; path = ../Classes/ParticleManager.cpp; sourceTree = "<group>"; };
+		4EB0CF6218E795FA00C9E1F4 /* ParticleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParticleManager.h; path = ../Classes/ParticleManager.h; sourceTree = "<group>"; };
 		4E78155818D78B6B0082513D /* CollisionManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionManager.cpp; path = ../Classes/CollisionManager.cpp; sourceTree = "<group>"; };
 		4E78155918D78B6B0082513D /* CollisionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollisionManager.h; path = ../Classes/CollisionManager.h; sourceTree = "<group>"; };
 		4E78155C18D78B6B0082513D /* KeyboardManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KeyboardManager.cpp; path = ../Classes/KeyboardManager.cpp; sourceTree = "<group>"; };
@@ -286,6 +296,7 @@
 		4E78158418D78B800082513D /* HD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HD; sourceTree = "<group>"; };
 		4E78158318D78B800082513D /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		4E78158818D78B800082513D /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		4EAD1A5D18D8C5CD00D1EE29 /* Particles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Particles; sourceTree = "<group>"; };
 		4E78158918D78B800082513D /* Support */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Support; sourceTree = "<group>"; };
 		4E78159818D78B930082513D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Resources/Images.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -374,6 +385,10 @@
 				4EF846FD18EF493F006A2CA0 /* Goal.h */,
 				4E78156318D78B6B0082513D /* Score.cpp */,
 				4E78156418D78B6B0082513D /* Score.h */,
+				4EB0CF6318E795FA00C9E1F4 /* ParticleSystemCustom.cpp */,
+				4EB0CF6418E795FA00C9E1F4 /* ParticleSystemCustom.h */,
+				4EB0CF6118E795FA00C9E1F4 /* ParticleManager.cpp */,
+				4EB0CF6218E795FA00C9E1F4 /* ParticleManager.h */,
 				4E78155818D78B6B0082513D /* CollisionManager.cpp */,
 				4E78155918D78B6B0082513D /* CollisionManager.h */,
 				4E78155C18D78B6B0082513D /* KeyboardManager.cpp */,
@@ -467,6 +482,7 @@
 				4E78158418D78B800082513D /* HD */,
 				4E78158318D78B800082513D /* Fonts */,
 				4E78158818D78B800082513D /* Sounds */,
+				4EAD1A5D18D8C5CD00D1EE29 /* Particles */,
 				4E78158918D78B800082513D /* Support */,
 				4E78159818D78B930082513D /* Images.xcassets */,
 			);
@@ -643,6 +659,7 @@
 				4E78158C18D78B800082513D /* HD in Resources */,
 				4E78158A18D78B800082513D /* Fonts in Resources */,
 				4E78159418D78B800082513D /* Sounds in Resources */,
+				4EAD1A5E18D8C5CD00D1EE29 /* Particles in Resources */,
 				4E78159618D78B800082513D /* Support in Resources */,
 				4E477E0D18D78DDF0079A6F5 /* Images.xcassets in Resources */,
 			);
@@ -657,6 +674,7 @@
 				4E78158D18D78B800082513D /* HD in Resources */,
 				4E78158B18D78B800082513D /* Fonts in Resources */,
 				4E78159518D78B800082513D /* Sounds in Resources */,
+				4EAD1A5F18D8C5CD00D1EE29 /* Particles in Resources */,
 				4E78159718D78B800082513D /* Support in Resources */,
 				4E78159918D78B930082513D /* Images.xcassets in Resources */,
 			);
@@ -681,6 +699,8 @@
 				4E78157918D78B6B0082513D /* Paddle.cpp in Sources */,
 				4EF846FE18EF493F006A2CA0 /* Goal.cpp in Sources */,
 				4E78157B18D78B6B0082513D /* Score.cpp in Sources */,
+				4EB0CF6718E795FA00C9E1F4 /* ParticleSystemCustom.cpp in Sources */,
+				4EB0CF6518E795FA00C9E1F4 /* ParticleManager.cpp in Sources */,
 				4E78157118D78B6B0082513D /* CollisionManager.cpp in Sources */,
 				4E78157518D78B6B0082513D /* KeyboardManager.cpp in Sources */,
 				4E78157D18D78B6B0082513D /* TouchManager.cpp in Sources */,
@@ -702,6 +722,8 @@
 				4E78157A18D78B6B0082513D /* Paddle.cpp in Sources */,
 				4EF846FF18EF493F006A2CA0 /* Goal.cpp in Sources */,
 				4E78157C18D78B6B0082513D /* Score.cpp in Sources */,
+				4EB0CF6818E795FA00C9E1F4 /* ParticleSystemCustom.cpp in Sources */,
+				4EB0CF6618E795FA00C9E1F4 /* ParticleManager.cpp in Sources */,
 				4E78157218D78B6B0082513D /* CollisionManager.cpp in Sources */,
 				4E78157618D78B6B0082513D /* KeyboardManager.cpp in Sources */,
 				4E78157E18D78B6B0082513D /* TouchManager.cpp in Sources */,

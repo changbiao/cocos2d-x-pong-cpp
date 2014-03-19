@@ -7,6 +7,7 @@
 #include "BaseLayer.h"
 #include "Resources.h"
 
+#include "ParticleManager.h"
 #include "CollisionManager.h"
 #include "KeyboardManager.h"
 #include "TouchManager.h"
@@ -104,6 +105,7 @@ private:
 private:
   PhysicsWorld* _world;
 
+  ParticleManager* _particleMgr;
   CollisionManager* _collisionMgr;
   KeyboardManager* _keyboardMgr;
   TouchManager* _touchMgr;
@@ -120,6 +122,7 @@ private:
 private:
   GameLayer() :
     _world(nullptr),
+    _particleMgr(nullptr),
     _collisionMgr(nullptr),
     _keyboardMgr(nullptr),
     _touchMgr(nullptr),
@@ -141,6 +144,7 @@ private:
   void createGoals();
   void createScores();
 
+  void createParticleManager();
   void createCollisionManager();
   void createKeyboardManager();
   void createTouchManager();
@@ -154,6 +158,7 @@ private:
   void increaseVelocity();
   void playSoundCollision();
   void playSoundPoint();
+  void emitParticles(const Point& point);
 
 };
 

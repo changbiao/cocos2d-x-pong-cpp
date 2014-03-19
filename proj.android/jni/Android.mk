@@ -15,6 +15,8 @@ LOCAL_SRC_FILES := app/main.cpp \
                    ../../Classes/Ball.cpp \
                    ../../Classes/Paddle.cpp \
                    ../../Classes/Score.cpp \
+                   ../../Classes/ParticleSystemCustom.cpp \
+                   ../../Classes/ParticleManager.cpp \
                    ../../Classes/CollisionManager.cpp \
                    ../../Classes/KeyboardManager.cpp \
                    ../../Classes/TouchManager.cpp \

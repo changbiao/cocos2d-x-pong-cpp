@@ -51,4 +51,9 @@ static const char SPRITE_PADDLE[] = "Paddle.png";
 static const char SOUND_COLLISION[] = "Sounds/Pong.wav";
 static const char SOUND_POINT[]     = "Sounds/Point.wav";
 
+
+#pragma mark - Particle emitters
+
+static const char PARTICLE_PIXELS[] = "Particles/Pixels.plist";
+
 #endif

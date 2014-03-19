@@ -51,6 +51,7 @@ bool GameLayer::init() {
 void GameLayer::onEnter() {
   Layer::onEnter();
 
+  createParticleManager();
   createCollisionManager();
   createKeyboardManager();
   createTouchManager();
@@ -155,6 +156,12 @@ void GameLayer::createScores() {
   addChild(_scoreRight, static_cast<Orders>(Order::BACKGROUND));
 }
 
+void GameLayer::createParticleManager() {
+  _particleMgr = ParticleManager::create();
+
+  addChild(_particleMgr);
+}
+
 void GameLayer::createCollisionManager() {
   std::map<CollisionManager::Tags, CollisionManager::Type> mapping = {
     { static_cast<Tags>(Tag::BALL) | static_cast<Tags>(Tag::WALL),         CollisionManager::Type::BALL_WITH_WALL         },
@@ -198,6 +205,7 @@ void GameLayer::onCollision(CollisionManager::Type type, const Point& point) {
     case CollisionManager::Type::BALL_WITH_PADDLE_LEFT:
     case CollisionManager::Type::BALL_WITH_PADDLE_RIGHT:
       playSoundCollision();
+      emitParticles(point);
       increaseVelocity();
       break;
     case CollisionManager::Type::BALL_WITH_GOAL_LEFT:
@@ -212,6 +220,7 @@ void GameLayer::onCollision(CollisionManager::Type type, const Point& point) {
       break;
     default:
       playSoundCollision();
+      emitParticles(point);
       break;
   }
 }
@@ -260,6 +269,10 @@ GameLayer::Side GameLayer::getTouchSide(const Point& location) {
 
 void GameLayer::increaseVelocity() {
   _ball->increaseVelocity();
+}
+
+void GameLayer::emitParticles(const Point& point) {
+  _particleMgr->addEmitter(PARTICLE_PIXELS, point, static_cast<Orders>(Order::FOREGROUND));
 }
 
 void GameLayer::playSoundCollision() {
