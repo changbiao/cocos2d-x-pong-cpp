@@ -45,4 +45,10 @@ static const char SPRITE_WALL[]   = "Wall.png";
 static const char SPRITE_BALL[]   = "Ball.png";
 static const char SPRITE_PADDLE[] = "Paddle.png";
 
+
+#pragma mark - Sounds
+
+static const char SOUND_COLLISION[] = "Sounds/Pong.wav";
+static const char SOUND_POINT[]     = "Sounds/Point.wav";
+
 #endif

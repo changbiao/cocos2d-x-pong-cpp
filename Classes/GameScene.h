@@ -2,6 +2,7 @@
 #define GAME_SCENE_H
 
 #include "cocos2d.h"
+#include "SimpleAudioEngine.h"
 
 #include "BaseLayer.h"
 #include "Resources.h"
@@ -17,6 +18,7 @@
 #include "Score.h"
 
 using namespace cocos2d;
+using namespace CocosDenshion;
 
 
 /**
@@ -150,6 +152,8 @@ private:
   Sides getCollisionSides(const Point& point);
   Side getTouchSide(const Point& point);
   void increaseVelocity();
+  void playSoundCollision();
+  void playSoundPoint();
 
 };
 

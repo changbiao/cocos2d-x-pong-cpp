@@ -26,6 +26,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
   auto director  = Director::getInstance();
 
   setupSprites();
+  setupSounds();
 
   director->setAnimationInterval(1.0 / 60);
 
@@ -46,10 +47,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
 void AppDelegate::applicationDidEnterBackground() {
   Director::getInstance()->stopAnimation();
+  SimpleAudioEngine::getInstance()->pauseBackgroundMusic();
 }
 
 void AppDelegate::applicationWillEnterForeground() {
   Director::getInstance()->startAnimation();
+  SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
 }
 
 
@@ -82,4 +85,9 @@ void AppDelegate::setupSprites() {
     fileUtils->addSearchPath(smallDef.path);
     director->setContentScaleFactor(smallDef.size.height / designSize.height);
   }
+}
+
+void AppDelegate::setupSounds() {
+  SimpleAudioEngine::getInstance()->preloadEffect(SOUND_COLLISION);
+  SimpleAudioEngine::getInstance()->preloadEffect(SOUND_POINT);
 }

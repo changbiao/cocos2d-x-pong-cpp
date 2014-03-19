@@ -197,17 +197,21 @@ void GameLayer::onCollision(CollisionManager::Type type, const Point& point) {
   switch (type) {
     case CollisionManager::Type::BALL_WITH_PADDLE_LEFT:
     case CollisionManager::Type::BALL_WITH_PADDLE_RIGHT:
+      playSoundCollision();
       increaseVelocity();
       break;
     case CollisionManager::Type::BALL_WITH_GOAL_LEFT:
+      playSoundPoint();
       scoreRight();
       restartToLeft();
       break;
     case CollisionManager::Type::BALL_WITH_GOAL_RIGHT:
+      playSoundPoint();
       scoreLeft();
       restartToRight();
       break;
     default:
+      playSoundCollision();
       break;
   }
 }
@@ -256,4 +260,12 @@ GameLayer::Side GameLayer::getTouchSide(const Point& location) {
 
 void GameLayer::increaseVelocity() {
   _ball->increaseVelocity();
+}
+
+void GameLayer::playSoundCollision() {
+  SimpleAudioEngine::getInstance()->playEffect(SOUND_COLLISION);
+}
+
+void GameLayer::playSoundPoint() {
+  SimpleAudioEngine::getInstance()->playEffect(SOUND_POINT);
 }

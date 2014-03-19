@@ -2,8 +2,10 @@
 #define APP_DELEGATE_H
 
 #include "cocos2d.h"
+#include "SimpleAudioEngine.h"
 
 using namespace cocos2d;
+using namespace CocosDenshion;
 
 
 /**
@@ -34,6 +36,7 @@ public:
 
 private:
   void setupSprites();
+  void setupSounds();
 
 };
 
