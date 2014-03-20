@@ -51,6 +51,7 @@ set(GAME_SRC
   Classes/Score.cpp
   Classes/ParticleSystemCustom.cpp
   Classes/ParticleManager.cpp
+  Classes/StreakManager.cpp
   Classes/CollisionManager.cpp
   Classes/KeyboardManager.cpp
   Classes/TouchManager.cpp

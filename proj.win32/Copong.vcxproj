@@ -145,6 +145,7 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClCompile Include="..\Classes\Score.cpp" />
     <ClCompile Include="..\Classes\ParticleSystemCustom.cpp" />
     <ClCompile Include="..\Classes\ParticleManager.cpp" />
+    <ClCompile Include="..\Classes\StreakManager.cpp" />
     <ClCompile Include="..\Classes\CollisionManager.cpp" />
     <ClCompile Include="..\Classes\KeyboardManager.cpp" />
     <ClCompile Include="..\Classes\TouchManager.cpp" />
@@ -162,6 +163,7 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClInclude Include="..\Classes\Score.h" />
     <ClInclude Include="..\Classes\ParticleSystemCustom.h" />
     <ClInclude Include="..\Classes\ParticleManager.h" />
+    <ClInclude Include="..\Classes\StreakManager.h" />
     <ClInclude Include="..\Classes\CollisionManager.h" />
     <ClInclude Include="..\Classes\KeyboardManager.h" />
     <ClInclude Include="..\Classes\TouchManager.h" />

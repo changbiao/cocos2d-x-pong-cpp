@@ -52,6 +52,7 @@ void GameLayer::onEnter() {
   Layer::onEnter();
 
   createParticleManager();
+  createStreakManager();
   createCollisionManager();
   createKeyboardManager();
   createTouchManager();
@@ -160,6 +161,13 @@ void GameLayer::createParticleManager() {
   _particleMgr = ParticleManager::create();
 
   addChild(_particleMgr);
+}
+
+void GameLayer::createStreakManager() {
+  std::vector<Sprite*> sprites = { _ball, _playerLeft, _playerRight };
+  _streakMgr = StreakManager::createWithSprites(sprites);
+
+  addChild(_streakMgr);
 }
 
 void GameLayer::createCollisionManager() {

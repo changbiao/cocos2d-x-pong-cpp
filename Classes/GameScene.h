@@ -8,6 +8,7 @@
 #include "Resources.h"
 
 #include "ParticleManager.h"
+#include "StreakManager.h"
 #include "CollisionManager.h"
 #include "KeyboardManager.h"
 #include "TouchManager.h"
@@ -106,6 +107,7 @@ private:
   PhysicsWorld* _world;
 
   ParticleManager* _particleMgr;
+  StreakManager* _streakMgr;
   CollisionManager* _collisionMgr;
   KeyboardManager* _keyboardMgr;
   TouchManager* _touchMgr;
@@ -123,6 +125,7 @@ private:
   GameLayer() :
     _world(nullptr),
     _particleMgr(nullptr),
+    _streakMgr(nullptr),
     _collisionMgr(nullptr),
     _keyboardMgr(nullptr),
     _touchMgr(nullptr),
@@ -145,6 +148,7 @@ private:
   void createScores();
 
   void createParticleManager();
+  void createStreakManager();
   void createCollisionManager();
   void createKeyboardManager();
   void createTouchManager();
